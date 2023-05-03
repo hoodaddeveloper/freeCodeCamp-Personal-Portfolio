@@ -33,38 +33,38 @@ html {
 /*-----------------------1200px / 16px = 75em----------------------*/
 @media (max-width: 75em) {
   html {
-      font-size: 60%;
+    font-size: 60%;
   }
 }
 
 /*-------------------980px / 16px = 61.25em------------------------*/
 @media (max-width: 61.25em) {
   html {
-      font-size: 58%;
+    font-size: 58%;
   }
 }
 
 /*-------------------460px / 16px = 28.75em-------------------------*/
 @media (max-width: 28.75em) {
   html {
-      font-size: 55%;
+    font-size: 55%;
   }
 }
 
 /*---------------------Base styles--------------------------------*/
 body {
-  font-family: 'Poppins', sans-serif;
-  font-size: 1.8rem;
   font-weight: 400;
   line-height: 1.4;
+  font-size: 1.8rem;
   color: var(--main-white);
+  font-family: 'Poppins', sans-serif;
 }
 
 h1,
 h2 {
-  font-family: 'Raleway', sans-serif;
   font-weight: 700;
   text-align: center;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1 {
@@ -85,22 +85,22 @@ a {
 }
 
 img {
-  display: block;
   width: 100%;
+  display: block;
 }
 
 /*-------------------------nav---------------------------*/
 .nav {
-  display: flex;
-  justify-content: Center;
-  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
-  background-color: #ff0057;
-  background-image: linear-gradient(62deg, #ff0057 0%, #181719 100%);
-  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
   z-index: 10;
+  width: 100%;
+  display: flex;
+  position: fixed;
+  justify-content: Center;
+  background-color: #ff0057;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  background-image: linear-gradient(62deg, #ff0057 0%, #181719 100%);
 }
 
 .nav-list {
@@ -110,8 +110,8 @@ img {
 
 .nav-list a {
   display: block;
-  font-size: 2.5rem;
   padding: 2.0rem;
+  font-size: 2.5rem;
 }
 
 .nav-list a:hover {
@@ -121,62 +121,65 @@ img {
 
 @media (max-width: 28.75em) {
   .nav-list a {
-      display: inline-block;
-      font-size: 1.2rem;
-      padding: 1.rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    display: inline-block;
   }
 }
 
 /*---------------------------Welcome section--------------------------*/
 .welcome-section {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   width: 100%;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
   background-color: #000;
   background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
 }
 
-.welcome-section > img {
+.welcome-section>img {
   width: 15%;
   height: 30%;
   border-radius: 50%;
 }
 
-.welcome-section > p {
+.welcome-section>p {
   font-size: 3rem;
   font-weight: 200;
   color: var(--main-red);
 }
 
-.welcome-section > h3 {
+.welcome-section>h3 {
   font-size: 2rem;
-  letter-spacing: 1px;
   font-weight: 100;
   font-style: italic;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 28.75em) {
   .welcome-section>img {
-      width: 35%;
-      padding: 10px;
-      height: 30%;
-      border-radius: 50%;
+    width: 35%;
+    height: 30%;
+    padding: 10px;
+    border-radius: 50%;
   }
-  .welcome-section > h1 {
-      font-size: 3rem;
+
+  .welcome-section>h1 {
+    font-size: 3rem;
   }
-  .welcome-section > p {
-      font-size: 1.5rem;
-      font-weight: 200;
-      color: var(--main-red);
+
+  .welcome-section>p {
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: var(--main-red);
   }
-  .welcome-section > h3 {
-      font-size: 1.5rem;
-      font-weight: 100;
-      font-style: italic;
+
+  .welcome-section>h3 {
+    font-weight: 100;
+    font-size: 1.5rem;
+    font-style: italic;
   }
 }
 
@@ -195,7 +198,7 @@ img {
 
 @media (max-width: 28.75em) {
   .projects-section-header {
-      font-size: 4rem;
+    font-size: 4rem;
   }
 }
 
@@ -212,10 +215,11 @@ img {
 
 @media (max-width: 30.625em) {
   .projects-section {
-      padding: 6rem 1rem;
+    padding: 6rem 1rem;
   }
+
   .projects-grid {
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
@@ -261,11 +265,11 @@ img {
   background: var(--main-red);
 }
 
-.btn-show-all:hover > i {
+.btn-show-all:hover>i {
   transform: translateX(2px);
 }
 
-.btn-show-all > i {
+.btn-show-all>i {
   margin-left: 10px;
   transform: translateX(0);
   transition: transform 0.3s ease-out;
@@ -273,7 +277,7 @@ img {
 
 @media (max-width: 28.75em) {
   .projects-section-header {
-      font-size: 3rem;
+    font-size: 3rem;
   }
 }
 
@@ -319,30 +323,34 @@ img {
 
 @media (max-width: 28.75em) {
   .testimonial-section>img {
-      width: 40%;
-      padding-top: 5px;
-      height: 30%;
-      border-radius: 50%;
+    width: 40%;
+    padding-top: 5px;
+    height: 30%;
+    border-radius: 50%;
   }
+
   .testimonial-section-header {
-      font-size: 3rem;
+    font-size: 3rem;
   }
+
   .testimonial-section>h1 {
-      font-size: 3rem;
+    font-size: 3rem;
   }
+
   .testimonial-section>p {
-      font-size: 1.5rem;
-      font-weight: 200;
-      font-style: italic;
-      color: var(--main-red);
+    font-size: 1.5rem;
+    font-weight: 200;
+    font-style: italic;
+    color: var(--main-red);
   }
+
   .testimonial-section>h3 {
-      font-size: 1.5rem;
-      letter-spacing: 1px;
-      font-weight: 200;
-      padding: 10px;
-      font-style: italic;
-      color: var(--main-black);
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+    font-weight: 200;
+    padding: 10px;
+    font-style: italic;
+    color: var(--main-black);
   }
 }
 
@@ -364,7 +372,7 @@ img {
 
 @media (max-width: 28.75em) {
   .contact-section-header>h2 {
-      font-size: 4rem;
+    font-size: 4rem;
   }
 }
 
@@ -401,7 +409,7 @@ footer {
   border-top: 4px solid var(--main-red);
 }
 
-footer > p {
+footer>p {
   margin: 2rem;
 }
 
@@ -411,7 +419,7 @@ footer i {
 
 @media (max-width: 28.75em) {
   footer {
-      flex-direction: column;
-      text-align: center;
+    flex-direction: column;
+    text-align: center;
   }
 }
