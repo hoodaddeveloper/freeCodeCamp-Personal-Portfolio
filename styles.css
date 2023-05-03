@@ -1,10 +1,10 @@
 /*-----Custom properties/variables---------*/
 :root {
-  --main-white: #f0f0f0;
   --main-red: #a3d4f5;
   --main-blue: #45567d;
   --main-gray: #303841;
   --main-pink: #ff0057;
+  --main-white: #f0f0f0;
   --main-black: #ffffff;
 }
 
